@@ -71,8 +71,21 @@ When you're all finished, write a `README` file detailing all steps required to 
 
 # Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Feed Reader Project:
 
-How to get Started?
-download the project as a zip file and open HTML file to start the application. you can work on the feedreader.JS file to edit and test and Udacity already provided start of the file to continue work on. it was all based on Jasmine library.
-Also, it's better to test your project on Chrome, its better for testing and review in my opinion. 
+How to run and start the project?
+- download the project as a zip file or clone from Github.
+-unzip it in your browser.
+- open HTML file to start the application/to run.
+
+Tests performed and for users to have a clear idea of the project: 
+* RSS Feeds
+  - it must have URL loops through each feed and shouldn't be empty.
+  - it must have names loops through each feed and shouldn't be empty.
+* The menu
+  - it should be hidden by defualt
+  - it should hide and open when clicked.
+* Initial Entries
+  - when loadfeed function is called and complete its work, there should be one entry element within feed container.
+* New Feed Selection
+  - it should change the contents when new feed is loaded.

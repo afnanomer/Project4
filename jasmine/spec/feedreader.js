@@ -54,27 +54,34 @@ describe('The menu', function(){
    describe('Initial Entries', function(){
 
        beforeEach(function (done){
-         loadFeed(0, function(){
-           done();
-         });
+         loadFeed(0, done);
        });
+
+       it('are present', function(){
+       expect($('.feed .entry').length).toBeGreaterThan(0);
     });
+  });
 //a test to ensure when loadFeed function is called and complete the work.
   describe('New Feed Selection', function(){
-      var start;
-      var end;
-      
+      var feedBefore;
+      var feedAfter;
+
+
        beforeEach(function (done){
-         $('.feed').empty();
-         loadFeed(0,function(){
-           start = $('.feed').find(allFeeds.url);
+         loadFeed(0,function(){      //load the feed at position 1
+           feedBefore = $('.feed').html();
            done();
          });
-         loadFeed(1, function(){
-           end = $('.feed').find(allFeeds.url);
-           done();
-         });
-       });
-  });
+      });
+
+      it('when new feed is loaded', function(done){
+        loadFeed(1, function(){
+          feedAfter = $('.feed').html();
+          expect(feedAfter).not.toEqual(feedBefore);
+          done();
+        });
+      });
+    });
+
 
 }());
