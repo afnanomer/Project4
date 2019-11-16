@@ -70,18 +70,17 @@ describe('The menu', function(){
        beforeEach(function (done){
          loadFeed(0,function(){      //load the feed at position 1
            feedBefore = $('.feed').html();
-           done();
-         });
-      });
+          loadFeed(1,function(){
+            feedAfter = $('.feed').html();
+            done();
+          });
 
+      });
+});
       it('when new feed is loaded', function(done){
-        loadFeed(1, function(){
-          feedAfter = $('.feed').html();
           expect(feedAfter).not.toEqual(feedBefore);
-          done();
-        });
+
       });
     });
-
 
 }());
