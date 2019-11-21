@@ -1,7 +1,6 @@
-# Project Overview
-
-In this project you are given a web-based application that reads RSS feeds.
-Click on the link to download or clone: https://github.com/afnanomer/Project4 and follow the instructions in details below to test:
+How to find the project:
+The project is a web-based application that reads RSS feeds. And you can find the project and download in the below link:
+https://github.com/afnanomer/Project4 and follow the instructions in details below to test:
 
 
 

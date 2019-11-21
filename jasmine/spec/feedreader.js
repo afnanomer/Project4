@@ -77,7 +77,7 @@ describe('The menu', function(){
 
       });
 });
-      it('when new feed is loaded', function(done){
+      it('when new feed is loaded', function(){
           expect(feedAfter).not.toEqual(feedBefore);
 
       });
