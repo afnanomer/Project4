@@ -22,3 +22,4 @@ Tests performed and for users to have a clear idea of the project:
   - when loadfeed function is called and complete its work, there should be one entry element within feed container.
 * New Feed Selection
   - it should change the contents when new feed is loaded.
+- and finally things should work well for you. 
